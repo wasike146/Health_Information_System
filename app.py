@@ -8,7 +8,8 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'supersecretkey')
 
 # Database connection
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('postgresql://health_db_4ltc_user:Gs5231Ec8eDpzQszYabfvbgzKdlyNO3N@dpg-d068vr9r0fns73fcg890-a/health_db_4ltc', 'postgresql+psycopg2://postgres:mypassword@localhost/health_db')
+# postgresql://health_db_4ltc_user:Gs5231Ec8eDpzQszYabfvbgzKdlyNO3N@dpg-d068vr9r0fns73fcg890-a/health_db_4ltc
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql+psycopg2://postgres:mypassword@localhost/health_db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -167,7 +168,7 @@ def run_create_user():
     db.session.add(user)
     db.session.commit()
     return "User created successfully!"
-
+    
 if __name__ == '__main__':
     with app.app_context(): 
         db.create_all()
