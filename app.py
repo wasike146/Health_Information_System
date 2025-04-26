@@ -168,6 +168,13 @@ def run_create_user():
     db.session.add(user)
     db.session.commit()
     return "User created successfully!"
+
+# create tables
+@app.route('/create_tables')
+def create_tables():
+    with app.app_context():
+        db.create_all()
+    return "Tables created successfully!"
     
 if __name__ == '__main__':
     with app.app_context(): 
