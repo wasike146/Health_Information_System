@@ -1,5 +1,7 @@
 Deployed on Render,Link:https://health-information-system-jvd6.onrender.com/login
-
+Login Credentials:
+username:Doctor
+Password:password123
  # Health Information System
 
     This project is a basic health information system designed for a doctor to manage clients and health programs/services.
