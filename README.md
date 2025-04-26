@@ -34,8 +34,6 @@ Deployed on Render,Link:https://health-information-system-jvd6.onrender.com/logi
 # Setup Instructions
 Clone the repository:
 
-    git clone https://github.com/your-username/health-info-system.git
-
     cd health-info-system
 
 Create a virtual environment:
