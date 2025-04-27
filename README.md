@@ -1,7 +1,7 @@
 Deployed on Render,Link:https://health-information-system-jvd6.onrender.com/login
 # Login Credentials:
-  -username:Doctor
-  -Password:password123
+  username:Doctor
+  Password:password123
 # Presentation Video
   Link:https://www.youtube.com/watch?v=c3ZTZhvRz_g
  # Health Information System
